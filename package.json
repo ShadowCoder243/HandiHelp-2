@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "vercel-build": "pnpm approve-builds @prisma/client @prisma/engines prisma && pnpm prisma generate && next build",
     "start": "next start",
     "lint": "eslint"
   },
